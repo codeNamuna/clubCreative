@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CC | Club Creative</title>	
+<link href='https://fonts.googleapis.com/css?family=Lobster|Pacifico' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="http://s19.postimg.org/6lpvtmy6b/ico2.png">
+<style>
+
+	@keyframes back_ani_major{
+		from{top:0px;}
+		to{top:100px;}
+	}
+	
+	@keyframes back_ani{
+		from{transform: rotate(0deg);}
+		to{transform: rotate(359deg);}
+	}
+	
+	#background_major{
+		position:fixed;
+		background-color:White;
+		top:50px;
+		animation-name:back_ani_major;
+		animation-timing-function:ease-in-out;
+		animation-iteration-count:infinite;
+		animation-duration:8s;
+		animation-direction:alternate;
+		z-index:0;
+	}
+	
+	.background_mini{
+		position:absolute;
+		display:inline-block;
+		background-size:contain;
+		background-repeat:no-repeat;	
+		animation-name:back_ani;
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+		overflow:hidden;
+		z-index:auto;
+	}
+	
+	#triangle1{
+		height:125px;
+		width:125px;
+		top:25px;
+		left:50px;
+		background-image:url("http://s19.postimg.org/d8llfot4z/triangles.png");
+		animation-duration:15s;
+	}
+
+	#triangle2{
+		height:50px;
+		width:50px;
+		top:300px;
+		left:1250px;
+		background-image:url("http://s19.postimg.org/d8llfot4z/triangles.png");
+		animation-duration:5s;
+	}
+
+	#smoothies{
+		height:100px;
+		width:100px;
+		top:360px;
+		left:40px;
+		background-image:url("http://s19.postimg.org/tkvn5f7gj/smoothies.png");
+		animation-duration:15s;
+	}
+	
+	#shoes{
+		height:80px;
+		width:80px;
+		top:60px;
+		left:1200px;
+		background-image:url("http://s19.postimg.org/9nl4ipz7n/shoes.png");
+		animation-duration:10s;
+	}
+
+	#waves{
+		height:100px;
+		width:100px;
+		top:550px;
+		left:250px;
+		background-image:url("http://s19.postimg.org/qpdykte2n/waves.png");
+		animation-duration:5s;
+	}
+	
+	#squares{
+		height:40px;
+		width:40px;
+		top:600px;
+		left:700px;
+		background-image:url("http://s19.postimg.org/cgixghoxv/squares.png");
+		animation-duration:5s;
+	}
+	
+	#circle1{
+		height:110px;
+		width:110px;
+		top:530px;
+		left:1100px;
+		background-image:url("http://s19.postimg.org/asf6o3loj/circles.png");
+		animation-duration:5s;
+	}
+	
+	#circle2{
+		height:60px;
+		width:60px;
+		top:370px;
+		left:425px;
+		background-image:url("http://s19.postimg.org/asf6o3loj/circles.png");
+		animation-duration:5s;
+	}	
+	
+	#hexas{
+		height:60px;
+		width:60px;
+		top:370px;
+		left:825px;
+		background-image:url("http://s19.postimg.org/6tmkj0mf7/hexas.png");
+		animation-duration:5s;
+	}
+	
+	.classes{
+		position:relative;
+		z-index:1;
+		height:400px;
+		width:100%;
+	}
+	
+	.class_inner1{
+		position:absolute;
+		height:100%;
+		width:49%;
+		display:inline-block;
+	}
+	
+	.class_inner2{
+		position:absolute;
+		height:100%;
+		width:50%;
+		right:0px;
+		display:inline-block;
+		
+	}
+	
+	.elements{
+		position:absolute;
+		background-size:contain;
+	}
+	
+	.class_head_font{
+		position:absolute;
+		top:15px;
+		left:100px;
+		font-family: 'Lobster', sans-serif;
+		font-size:90px;
+	}
+	
+	.like{
+		position:absolute;
+		top:5px;
+		left:330px;
+		font-family:'Lobster',sans-serif;
+	}
+	
+	.class_description{
+		position:absolute;
+		font-family:'Pacifico',cursive;
+		font-size:20px;
+		text-align:center;
+	}
+
+//----------------------------------------------------SCIENCE--------------------------------------------------------
+
+	#science{
+		top:0px;
+	}
+	
+	#science1{
+		background-color:#ffCC33;
+	}
+	
+	#sc1{
+		bottom:-65px;
+		left:-45px;
+		height:200px;
+		width:200px;
+		background-image: url("http://s19.postimg.org/vda7awuwz/gear.png");
+		animation-name:back_ani;
+		animation-duration:5s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	#sc2{
+		bottom:35px;
+		left:125px;
+		height:150px;
+		width:150px;
+		background-image: url("http://s19.postimg.org/vda7awuwz/gear.png");
+		animation-name:back_ani;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-direction:reverse;
+		animation-iteration-count:infinite;
+	}
+	
+	#sc3{
+		bottom:120px;
+		left:50px;
+		height:100px;
+		width:100px;
+		background-image: url("http://s19.postimg.org/vda7awuwz/gear.png");
+		animation-name:back_ani;
+		animation-duration:2s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	
+	}
+	
+	#sc4{
+		bottom:-3px;
+		left:18px;
+		height:75px;
+		width:75px;
+		background-image: url("http://s19.postimg.org/4nwv298cj/gear2.png");
+		animation-name:back_ani;
+		animation-duration:2s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	
+	}
+	
+	@keyframes rocket_science{
+		from{left:0px;}
+		to{left:300px;}
+	}
+
+	@keyframes rocket_science_tail{
+		from{width:16px;}
+		to{width:316px;}
+	}
+
+	#sc5{
+		top:-21px;
+		left:-18px;
+		height:110px;
+		width:110px;
+		background-image: url("http://s19.postimg.org/6z7f0lxfn/33767.png");
+		background-repeat:no-repeat;
+		transform: rotate(143deg);
+
+	}
+	
+	#sc6{
+		top:30px;
+		left:-3px;
+		height:35px;
+		width:35px;
+		background-image: url("http://s19.postimg.org/tfwh9hpj7/gear3.png");
+		background-repeat:no-repeat;
+		animation-name:back_ani;
+		animation-duration:1s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+
+	}
+
+	#sc_rocket{
+		height:100px;
+		width:100px;
+		top:18px;
+		background-color:White;
+		border-radius:100%;
+		animation-name:rocket_science;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-direction:alternate;
+		animation-iteration-count:infinite;
+	}
+	
+	#sc7{
+		top:62px;
+		left:0px;
+		height:10px;
+		width:17px;
+		background-color: Black;
+		animation-name:rocket_science_tail;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-direction:alternate;
+		animation-iteration-count:infinite;
+	}
+	
+	#sci_head_font{
+			left:185px;
+			color:#ffCC33;
+		}
+
+	#sci_description{
+			top:180px;
+			left:80px;
+	}
+	
+	#mid_div1{
+	height:260px;
+	width:100%;	
+	}
+
+//----------------------------------------------------MUSIC----------------------------------------------------------
+	#music{
+		//top:0px;
+	}
+	
+	#music1{
+		
+	}
+
+	#music2{
+		background-color:#1FC3F9;
+	}
+	
+	#ms1{
+		height:150px;
+		width:150px;
+		top:40px;
+		left:258px;
+		background-image: url("http://s19.postimg.org/t48856w03/clip.png");
+		background-repeat:no-repeat;
+	}
+	
+	#msst1{
+		height:14px;
+		width:14px;
+		top:35px;
+		left:36px;
+		background-image: url(http://s19.postimg.org/65bima003/gearwhite.png);
+		background-repeat:no-repeat;
+		animation-name:back_ani;
+		animation-duration:1s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	#msst2{
+		height:14px;
+		width:14px;
+		top:35px;
+		left:100px;
+		background-image: url(http://s19.postimg.org/65bima003/gearwhite.png);
+		background-repeat:no-repeat;
+		animation-name:back_ani;
+		animation-duration:1s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	@keyframes ms_ani1{
+		0%{height:110px;}
+		50%{height:200px;}
+		100%{height:110px;}
+	}
+		
+	@keyframes ms_ani2{
+		0%{height:50px;}
+		50%{height:220px;}
+		100%{height:50px;}
+	}
+
+	@keyframes ms_ani3{
+		0%{height:20px;}
+		50%{height:200px;}
+		100%{height:20px;}
+	}
+
+	@keyframes ms_ani4{
+		0%{height:80px;}
+		50%{height:200px;}
+		100%{height:80px;}
+	}
+	
+	@keyframes ms_ani5{
+		0%{height:150px;}
+		50%{height:70px;}
+		100%{height:150px;}
+	}
+	
+	@keyframes ms_ani6{
+		0%{height:100px;}
+		50%{height:130px;}
+		100%{height:100px;}
+	}
+
+	#ms2{
+		height:150px;
+		width:100%;
+		bottom:10px;
+		border-bottom:5px solid White;
+	}
+	
+	#ms3{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		left:5px;
+		background-color:White;
+		animation-name:ms_ani1;
+		animation-duration:4s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+
+	#ms4{
+		height:20px;
+		width:35px;
+		bottom:0px;
+		left:45px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani2;
+		animation-duration:6s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		
+	}
+
+	#ms5{
+		height:70px;
+		width:35px;
+		bottom:0px;
+		left:85px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani3;
+		animation-duration:8s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		
+	}
+
+	#ms6{
+		height:80px;
+		width:35px;
+		bottom:0px;
+		left:125px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani4;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;	
+	}
+
+	#ms7{
+		height:150px;
+		width:35px;
+		bottom:0px;
+		left:165px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani5;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+
+	#ms8{
+		height:100px;
+		width:35px;
+		bottom:0px;
+		left:205px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani6;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		
+	}
+
+	#ms9{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		left:245px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;		
+	}
+
+	#ms12{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		right:245px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		
+	}
+
+	#ms13{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		right:205px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;	
+		background-color:White;
+		animation-name:ms_ani6;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		
+	}
+
+	#ms14{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		right:165px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani5;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		
+	}
+
+	#ms15{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		right:125px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani4;
+		animation-duration:3s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;	
+		
+	}
+
+	#ms16{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		right:85px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani3;
+		animation-duration:8s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		
+	}	
+
+	#ms17{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		right:45px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani2;
+		animation-duration:6s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		
+	}	
+	
+	#ms18{
+		height:110px;
+		width:35px;
+		bottom:0px;
+		right:5px;
+		border-top-left-radius:17px;
+		border-top-right-radius:17px;
+		background-color:White;
+		animation-name:ms_ani1;
+		animation-duration:4s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		
+	}
+	
+	#ms19{
+		height:130px;
+		width:130px;
+		bottom:-7px;
+		left:283px;
+		background-image: url("http://s19.postimg.org/quk3ufn2b/gate.png");
+		background-repeat: no-repeat;
+		
+	}
+
+	#ms20{
+		height:50px;
+		width:50px;
+		top:180px;
+		right:260px;
+		transform: rotate(45deg);
+		background-image: url("http://s19.postimg.org/7j35hkz9f/stylephones1.png");
+		background-repeat: no-repeat;
+	}	
+	
+	#ms_head_font{
+		color:#1FC3F9;
+		left:200px;
+	}
+	
+	#ms_description{
+			top:190px;
+			left:70px;
+	}
+	
+	#mid_div2{
+	height:260px;
+	width:100%;	
+	}
+
+//-------------------------------------------------CANVAS---------------------------------------------------------------
+
+	#canvas{
+		//top:0px;
+	}
+	
+	#canvas1{
+		background-color:#FFEDBF;	
+	}
+
+	#canvas2{
+	}
+
+	@keyframes cv_ani1{
+		0%{height:400px;}
+		6%{height:0px;}
+		12%{height:0px;}
+		18%{height:400px;}
+		24%{height:400px;}
+		54%{height:400px;}
+		60%{height:0px;}
+		66%{height:0px;}
+		72%{height:400px;}
+		84%{height:400px;}
+		90%{height:0px;}
+		96%{height:0px;}
+		100%{height:400px;}
+	}
+	
+	@keyframes cv_ani2{
+		0%{height:400px;}
+		1%{height:400px;}
+		7%{height:0px;}
+		13%{height:0px;}
+		19%{height:400px;}
+		24%{height:400px;}
+		30%{height:0px;}
+		36%{height:0px;}
+		42%{height:400px;}
+		55%{height:400px;}
+		61%{height:0px;}
+		67%{height:0px;}
+		73%{height:400px;}
+		84%{height:400px;}
+		90%{height:0px;}
+		96%{height:0px;}
+		100%{height:400px;}
+	}
+
+	@keyframes cv_ani3{
+		0%{height:400px;}
+		25%{height:400px;}
+		31%{height:0px;}
+		37%{height:0px;}
+		43%{height:400px;}
+		67%{height:400px;}
+		73%{height:0px;}
+		79%{height:0px;}
+		85%{height:400px;}
+		84%{height:400px;}
+		90%{height:0px;}
+		96%{height:0px;}
+		100%{height:400px;}
+		
+	}
+
+	@keyframes cv_ani4{
+		0%{height:400px;}
+		1%{height:400px;}
+		13%{height:400px;}
+		19%{height:0px;}
+		25%{height:0px;}
+		31%{height:400px;}
+		36%{height:400px;}
+		42%{height:0px;}
+		48%{height:0px;}
+		54%{height:400px;}
+		66%{height:400px;}
+		72%{height:0px;}
+		78%{height:0px;}
+		84%{height:400px;}
+		84%{height:400px;}
+		90%{height:0px;}
+		96%{height:0px;}
+		100%{height:400px;}
+	}
+
+	@keyframes cv_ani5{
+		0%{height:400px;}
+		12%{height:400px;}
+		18%{height:0px;}
+		24%{height:0px;}
+		30%{height:400px;}
+		37%{height:400px;}
+		43%{height:0px;}
+		49%{height:0px;}
+		55%{height:400px;}
+		84%{height:400px;}
+		90%{height:0px;}
+		96%{height:0px;}
+		100%{height:400px;}		
+	}
+
+	@keyframes cv_ani6{
+		0%{background-image: url("http://s19.postimg.org/5hhdbb3b7/she4_final.png");}
+		19%{background-image: url("http://s19.postimg.org/5hhdbb3b7/she4_final.png");}
+		19.01%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+
+	@keyframes cv_ani7{
+		0%{background-image: url("http://s19.postimg.org/macmnh5dv/rainydfinal2.png");}
+		30%{background-image: url("http://s19.postimg.org/macmnh5dv/rainydfinal2.png");}
+		30.01%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+
+	@keyframes cv_ani8{
+		0%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		23%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		23.01%{background-image: url("http://s19.postimg.org/fvi74jo1v/tiggerfinal.png");}
+		42%{background-image: url("http://s19.postimg.org/fvi74jo1v/tiggerfinal.png");}
+		42.01%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+
+	@keyframes cv_ani9{
+		0%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		83%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		83.01%{background-image: url("http://s19.postimg.org/vyz9i3eyr/treefinal.png");}
+		100%{background-image: url("http://s19.postimg.org/vyz9i3eyr/treefinal.png");}
+	}
+
+	@keyframes cv_ani10{
+		0%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		47%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		47.01%{background-image: url("http://s19.postimg.org/d48kosl8f/tutfinal.png");}
+		72%{background-image: url("http://s19.postimg.org/d48kosl8f/tutfinal.png");}
+		72.01%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+
+	@keyframes cv_ani11{
+		0%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		35%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		35.01%{background-image: url("http://s19.postimg.org/wjjchweir/maskfinal.png");}
+		54%{background-image: url("http://s19.postimg.org/wjjchweir/maskfinal.png");}
+		54.01%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes cv_ani12{
+		0%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		65%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		65.01%{background-image: url("http://s19.postimg.org/3q78iquf7/splatterfinal.png");}
+		84%{background-image: url("http://s19.postimg.org/3q78iquf7/splatterfinal.png");}
+		84.01%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	
+	#cv1{
+		z-index:3;
+		left:0px;
+		width:130px;
+		height:400px;
+		background-color:#FF003C;
+		animation-name:cv_ani1;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	#cv2{
+		z-index:3;
+		left:130px;
+		width:130px;
+		height:400px;
+		background-color:#FF8A00;
+		animation-name:cv_ani2;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	#cv3{
+		z-index:3;
+		left:260px;
+		width:130px;
+		height:400px;
+		background-color:#FABE28;
+		animation-name:cv_ani3;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	#cv4{
+		z-index:3;
+		left:390px;
+		width:130px;
+		height:400px;
+		background-color:#88C100;
+		animation-name:cv_ani4;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+
+	#cv5{
+		z-index:3;
+		left:520px;
+		width:133px;
+		height:400px;
+		background-color:#00C176;
+		animation-name:cv_ani5;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+
+	#cv6{
+		z-index:2;
+		height:400px;
+		width:400px;
+		background-image: url("http://s19.postimg.org/5hhdbb3b7/she4_final.png");
+		background-repeat: no-repeat;
+		background-size:contain;
+		animation-name:cv_ani6;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	
+	#cv7{
+		z-index:2;
+		height:350px;
+		width:350px;
+		top:17px;
+		right:-40px;
+		//background-image: url("http://s19.postimg.org/macmnh5dv/rainydfinal2.png");
+		background-repeat: no-repeat;
+		background-size:contain;
+		animation-name:cv_ani7;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;	
+	}
+
+	#cv8{
+		z-index:2;
+		height:250px;
+		width:250px;
+		top:75px;
+		left:137px;
+		//background-image: url("http://s19.postimg.org/fvi74jo1v/tiggerfinal.png");
+		background-repeat: no-repeat;
+		background-size:contain;
+		animation-name:cv_ani8;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}	
+	
+	#cv9{
+		z-index:2;
+		height:550px;
+		width:550px;
+		top:0px;
+		left:20px;
+		//background-image: url("http://s19.postimg.org/vyz9i3eyr/treefinal.png");
+		background-repeat: no-repeat;
+		background-size:contain;
+		animation-name:cv_ani9;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+
+	#cv10{
+		z-index:2;
+		height:250px;
+		width:250px;
+		top:85px;
+		left:5px;
+		//background-image: url("http://s19.postimg.org/d48kosl8f/tutfinal.png");
+		background-repeat: no-repeat;
+		background-size:contain;
+		animation-name:cv_ani10;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}	
+	
+	#cv11{
+		z-index:2;
+		height:250px;
+		width:250px;
+		top:85px;
+		right:21px;
+		//background-image: url("http://s19.postimg.org/wjjchweir/maskfinal.png");
+		background-repeat: no-repeat;
+		background-size:contain;
+		animation-name:cv_ani11;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+
+	#cv12{
+		z-index:2;
+		height:250px;
+		width:250px;
+		top:85px;
+		right:144px;
+		//background-image: url("http://s19.postimg.org/3q78iquf7/splatterfinal.png");
+		background-repeat: no-repeat;
+		background-size:contain;
+		animation-name:cv_ani12;
+		animation-duration:25s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	
+	#cv_head_font{
+		color:#88C100;
+		left:180px;
+	}
+	
+	#cv_description{
+			top:190px;
+			left:20px;
+	}
+	
+	#mid_div3{
+	height:260px;
+	width:100%;	
+	}
+
+//-----------------------------------------------------------LITERATURE-----------------------------------------------------------------------
+	#literature{
+		//top:0px;
+	}
+	
+	#literature1{	
+	}
+
+	#literature2{
+		background-color:Black;
+	}
+	
+	@keyframes eye_ani{
+		0%{height:0px;}
+		20%{height:0px;}
+		20.5%{height:20px;}
+		21%{height:0px;}
+		25%{height:0px;}
+		25.5%{height:20px;}
+		26%{height:0px;}
+		100%{height:0px;}
+	}
+	
+	@keyframes lt_ani2{
+		0%{left:350px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		2.4%{left:350px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		2.5%{left:350px;background-image:url("http://s19.postimg.org/8b6bnoww3/nlkoo80h.jpg");}
+		5%{left:243px;background-image:url("http://s19.postimg.org/8b6bnoww3/nlkoo80h.jpg");}
+		10%{left:243px;background-image:url("http://s19.postimg.org/8b6bnoww3/nlkoo80h.jpg");}
+		10.1%{left:350px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:350px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+	
+	@keyframes lt_ani3{
+		0%{width:0px; z-index:2;background-color:Black;}
+		2.5%{width:333px; z-index:2;background-color:Black;}
+		10%{width:333px; z-index:2;background-color:Black;}
+		12.5%{width:0px; z-index:2;background-color:Black;}
+		20%{width:0px; z-index:4;background-color:White;}
+		22.5%{width:333px; z-index:4;background-color:white;}
+		22.6%{width:0px;z-index:2;background-color:White;}
+		22.7%{width:0px;z-index:2;background-color:Black;}
+		100%{width:0px; z-index:2;background-color:Black;}
+	}
+
+	@keyframes lt_ani4{
+		0%{width:0px; z-index:2;background-color:Black;}
+		7.5%{width:0px; z-index:2;background-color:Black;}
+		10%{width:333px; z-index:2;background-color:Black;}
+		12.5%{width:0px; z-index:2;background-color:Black;}
+		20%{width:0px; z-index:4;background-color:White;}
+		22.5%{width:333px; z-index:4;background-color:white;}
+		22.6%{width:0px;z-index:2;background-color:White;}
+		22.7%{width:0px;z-index:2;background-color:Black;}
+		100%{width:0px;z-index:2;background-color:Black;}
+	}
+	
+	@keyframes lt_ani5{
+		0%{bottom:0px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		10%{bottom:0px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		10.1%{bottom:0px; background-image: url("http://s19.postimg.org/gb35vyi6b/sherl1.png");}
+		17.5%{bottom:50px; background-image: url("http://s19.postimg.org/gb35vyi6b/sherl1.png");}
+		17.6%{bottom:50px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		20%{bottom:100px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{bottom:100px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+
+	@keyframes lt_ani6{
+		0%{top:0px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		10%{top:0px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		10.1%{top:0px;background-image: url("http://s19.postimg.org/mq26smow3/bat1.png");}
+		17.5%{top:40px;background-image: url("http://s19.postimg.org/mq26smow3/bat1.png");}
+		17.6%{top:40px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		20%{top:80px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{top:80px; background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+
+	@keyframes lt_ani7{
+		0%{height:0px;}
+		16.5%{height:0px;}
+		17.5%{height:100px;}
+		22.4%{height:100px;}
+		22.5%{height:0px;}
+		100%{height:0px;}
+		
+	}
+
+	@keyframes lt_ani71{
+		0%{width:0px;}
+		17%{width:0px;}
+		18%{width:78px}
+		22.4%{width:78px;}
+		22.5%{width:0px;}
+		100%{width:0px;}
+	}
+	
+	
+	@keyframes lt_ani72{
+		0%{width:0px;}
+		18%{width:0px;}
+		19%{width:78px;}
+		22.4%{width:78px;}
+		22.5%{width:0px;}
+		100%{width:0px;}
+	}
+	
+	@keyframes lt_ani73{
+		0%{width:0px;}
+		19%{width:0px;}
+		20%{width:78px;}
+		22.4%{width:78px;}
+		22.5%{width:0px;}
+		100%{width:0px;}
+	}
+
+	@keyframes lt_ani74{
+		0%{width:0px;}
+		20%{width:0px;}
+		21%{width:78px;}
+		22.4%{width:78px;}
+		22.5%{width:0px;}
+		100%{width:0px;}
+	}
+	
+	@keyframes lt_ani8{
+		0%{height:200px;width:200px;top:50px;left:250px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		23%{height:200px;width:200px;top:50px;left:250px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		23.01%{height:200px;width:200px;top:50px;left:250px;background-image:url("http://s19.postimg.org/q0qjsietf/quill.png");}
+		25.60%{height:200px;width:200px;top:50px;left:250px;background-image:url("http://s19.postimg.org/q0qjsietf/quill.png");}
+		25.61%{height:200px;width:200px;top:50px;left:295px;background-image:url("http://s19.postimg.org/w0eaw5zlv/pen1.png");}
+		28.3%{height:200px;width:200px;top:50px;left:295px;background-image:url("http://s19.postimg.org/w0eaw5zlv/pen1.png");}
+		28.31%{height:130px;width:130px;top:80px;left:268px;background-image: url("http://s19.postimg.org/jx8z8lojn/34637_200.png");}
+		32.4%{height:130px;width:130px;top:80px;left:268px;background-image: url("http://s19.postimg.org/jx8z8lojn/34637_200.png");}
+		32.5%{height:200px;width:200px;top:50px;left:250px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{height:200px;width:200px;top:50px;left:250px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+	
+	@keyframes lt_ani9{
+		0%{background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		37.5%{background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		40%{background-image:url("http://s19.postimg.org/lsvrjrddv/potter1.png");}
+		45%{background-image:url("http://s19.postimg.org/lsvrjrddv/potter1.png");}
+		47.5%{background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+	
+	@keyframes lt_ani10{
+		0%{right:50px;transform: rotate(5deg);background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		49%{right:50px;transform: rotate(5deg);background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		49.01%{right:50px;transform: rotate(5deg);background-image:url("http://s19.postimg.org/m871crzb7/hood.png");}
+		51.5%{right:100px;transform: rotate(-5deg);background-image:url("http://s19.postimg.org/m871crzb7/hood.png");}
+		54%{right:150px;transform: rotate(5deg);background-image:url("http://s19.postimg.org/m871crzb7/hood.png");}
+		56.5%{right:200px;transform: rotate(-5deg);background-image:url("http://s19.postimg.org/m871crzb7/hood.png");}
+		59%{right:250px;transform: rotate(5deg);background-image:url("http://s19.postimg.org/m871crzb7/hood.png");}
+		59.01%{right:250px;transform: rotate(5deg);background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{right:250px;transform: rotate(5deg);background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+	
+	@keyframes lt_ani11{
+		0%{top:15px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		49%{top:15px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		49.01%{top:15px;background-image:url("http://s19.postimg.org/yyb9pv79f/wolf1.png");}
+		51.5%{top:-15px;background-image:url("http://s19.postimg.org/yyb9pv79f/wolf1.png");}
+		54%{top:15px;background-image:url("http://s19.postimg.org/yyb9pv79f/wolf1.png");}
+		56.5%{top:-15px;background-image:url("http://s19.postimg.org/yyb9pv79f/wolf1.png");}
+		59%{top:15px;background-image:url("http://s19.postimg.org/yyb9pv79f/wolf1.png");}
+		59.01%{top:15px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{top:15px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+	} 
+	
+	@keyframes lt_ani13{
+		0%{left:250px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		61.99%{left:250px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		62%{left:250px;background-image: url("http://s19.postimg.org/n9gxcrc03/image.png");}
+		64.5%{left:200px;background-image: url("http://s19.postimg.org/n9gxcrc03/image.png");}
+		64.51%{left:200px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:200px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+	}
+
+	@keyframes lt_ani14{
+		0%{left:190px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		64.49%{left:190px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		65%{left:190px;background-image: url("http://s19.postimg.org/yac2hs48z/image.png");}
+		67.5%{left:240px;background-image: url("http://s19.postimg.org/yac2hs48z/image.png");}
+		67.51%{left:240px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:240px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}		
+	}
+
+	@keyframes lt_ani15{
+		0%{left:290px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		67.5%{left:290px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		67.51%{left:290px;background-image: url("http://s19.postimg.org/f92mo9v2b/image.png");}
+		70%{left:240px;background-image: url("http://s19.postimg.org/f92mo9v2b/image.png");}
+		70.01%{left:240px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:240px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}		
+	}
+
+	@keyframes lt_ani16{
+		0%{left:200px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		70%{left:200px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		70.01%{left:200px;background-image: url("http://s19.postimg.org/tw3l5xtoj/image.png");}
+		72.5%{left:250px;background-image: url("http://s19.postimg.org/tw3l5xtoj/image.png");}
+		72.51%{left:250px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:250px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes lt_ani17{
+		0%{left:270px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		72.5%{left:270px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		72.51%{left:270px;background-image: url("http://s19.postimg.org/oqxsakrcz/image.png");}
+		75%{left:220px;background-image: url("http://s19.postimg.org/oqxsakrcz/image.png");}
+		75.01%{left:220px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:220px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes lt_ani18{
+		0%{left:170px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		75%{left:170px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		75.01%{left:170px;background-image: url("http://s19.postimg.org/wiei94vib/image.png");}
+		77.5%{left:220px;background-image: url("http://s19.postimg.org/wiei94vib/image.png");}
+		77.51%{left:220px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:220px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes lt_ani19{
+		0%{left:270px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		77.5%{left:270px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		77.51%{left:270;background-image: url("http://s19.postimg.org/c0tjxhjer/gbs.png");}
+		80%{left:220px;background-image: url("http://s19.postimg.org/c0tjxhjer/gbs.png");}
+		80.01%{left:220px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:220px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes lt_ani20{
+		0%{left:200px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		80%{left:200px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		80.01%{left:200px;background-image: url("http://s19.postimg.org/ssjgtz91f/image.png");}
+		82.5%{left:250px;background-image: url("http://s19.postimg.org/ssjgtz91f/image.png");}
+		82.51%{left:250px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:250px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes lt_ani21{
+		0%{left:300px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		82.5%{left:300px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		82.51%{left:300;background-image: url("http://s19.postimg.org/433q9kvib/rkn.png");}
+		85%{left:250px;background-image: url("http://s19.postimg.org/433q9kvib/rkn.png");}
+		85.01%{left:250px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:250px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes lt_ani22{
+		0%{left:180px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		85%{left:180px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		85.01%{left:180px;background-image: url("http://s19.postimg.org/nsm0m13er/image.png");}
+		87.5%{left:230px;background-image: url("http://s19.postimg.org/nsm0m13er/image.png");}
+		87.51%{left:230px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:230px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes lt_ani23{
+		0%{left:250px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		87.5%{left:250px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		87.51%{left:250;background-image: url("http://s19.postimg.org/wh4kfptoj/grrm.png");}
+		90%{left:200px;background-image: url("http://s19.postimg.org/wh4kfptoj/grrm.png");}
+		90.01%{left:200px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:200px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+
+	@keyframes lt_ani24{
+		0%{left:200px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		90%{left:200px;background-image: url("http://s19.postimg.org/vxjecclfj/none.png");}
+		90.01%{left:200px;background-image: url("http://s19.postimg.org/l2coou6pv/image.png");}
+		92.5%{left:250px;background-image: url("http://s19.postimg.org/l2coou6pv/image.png");}
+		92.51%{left:250px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}
+		100%{left:250px;background-image:url("http://s19.postimg.org/vxjecclfj/none.png");}	
+	}
+	
+	@keyframes lt_ani25{
+		0%{background-image:url("http://s19.postimg.org/vxjecclfj/none.png");z-index:2;}
+		94%{background-image:url("http://s19.postimg.org/vxjecclfj/none.png");z-index:2;}
+		95%{background-image:url("http://s19.postimg.org/wl2z9pojn/read.png");z-index:2;}
+		98%{background-image:url("http://s19.postimg.org/wl2z9pojn/read.png");z-index:3;}
+		99.99%{background-image:url("http://s19.postimg.org/wl2z9pojn/read.png");z-index:3;}
+		100%{background-image:url("http://s19.postimg.org/vxjecclfj/none.png");z-index:2;}
+	}
+	
+	@keyframes lt_ani12{
+		0%{height:300px;}
+		2.5%{height:0px;}
+		15%{height:0px;}
+		17.5%{height:300px;}
+		22.4%{height:300px;}
+		22.5%{height:0px;}
+		30%{height:0px;}
+		32.5%{height:300px;}
+		35%{height:0px;}
+		45%{height:0px;}
+		47.5%{height:300px;}
+		50%{height:300px;}
+		52.5%{height:0px;}
+		57%{height:0px;}
+		59.5%{height:300px;}
+		62%{height:0px;}
+		92%{height:0px;}
+		94.5%{height:300px;}
+		100%{height:300px;}
+	}
+
+	#lt1{
+		background-color:White;
+		width:666px;
+		height:300px;
+		bottom:50px;
+	}
+	
+	#lt2{
+		height:120px;
+		width:120px;
+		top:80px;
+		left:243px;
+		background-image: url("http://s19.postimg.org/8b6bnoww3/nlkoo80h.jpg");
+		background-repeat:no-repeat;
+		animation-name:lt_ani2;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+
+	#eye1{
+		height:0px;
+		width:20px;
+		top:29px;
+		left:36px;
+		border-radius:100%;
+		background-color:White;
+		animation-name:eye_ani;
+		animation-duration:10s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	#eye2{
+		height:0px;
+		width:20px;
+		top:29px;
+		right:37px;
+		border-radius:100%;
+		background-color:White;
+		animation-name:eye_ani;
+		animation-duration:10s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt3{
+		z-index:2;
+		height:300px;
+		width:0px;
+		background-color:Black;
+		left:333px;
+		animation-name:lt_ani3;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt4{
+		z-index:2;
+		height:300px;
+		width:0px;
+		background-color:Black;
+		right:333px;
+		animation-name:lt_ani4;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt5{
+		height:280px;
+		width:280px;
+		right:52px;
+		bottom:22px;
+		ackground-image: url("http://s19.postimg.org/gb35vyi6b/sherl1.png");
+		background-repeat: no-repeat;
+		animation-name:lt_ani5;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+
+	#lt6{
+		height:230px;
+		width:230px;
+		top:40px;
+		left:102px;
+		background-image: url("http://s19.postimg.org/mq26smow3/bat1.png");
+		background-repeat: no-repeat;
+		animation-name:lt_ani6;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt7{
+		z-index:4;
+		height:100px;
+		width:90px;
+		background-color:White;
+		border-radius: 5px;
+		left:290px;
+		top:100px;
+		animation-name:lt_ani7;
+		animation-duration:40s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt7_lines1{
+		z-index:4;
+		border-radius:2px;
+		left:6px;
+		top:20px;
+		background-color:Black;
+		height:5px;
+		width:0px;
+		animation-name:lt_ani71;
+		animation-duration:40s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt7_lines2{
+		z-index:4;
+		border-radius:2px;
+		left:6px;
+		top:30px;
+		background-color:Black;
+		height:5px;
+		width:0px;
+		animation-name:lt_ani72;
+		animation-duration:40s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt7_lines3{
+		z-index:4;
+		border-radius:2px;
+		left:6px;
+		top:40px;
+		background-color:Black;
+		height:5px;
+		width:0px;
+		animation-name:lt_ani73;
+		animation-duration:40s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+
+	#lt7_lines4{
+		z-index:4;
+		border-radius:2px;
+		left:6px;
+		top:50px;
+		background-color:Black;
+		height:5px;
+		width:0px;
+		animation-name:lt_ani74;
+		animation-duration:40s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt8
+	{
+		//pen;
+		height:200px;
+		width:200px;
+		background-image:url("http://s19.postimg.org/q0qjsietf/quill.png");
+		animation-name:lt_ani8;
+		animation-duration:40s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		background-repeat:no-repeat;
+	}
+	
+	#lt9{
+		z-index:3;
+		height:400px;
+		width:400px;
+		left:132px;
+		top:-30px;
+		background-image:url("http://s19.postimg.org/lsvrjrddv/potter1.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani9;
+		animation-duration:40s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		background-repeat:no-repeat;
+	}
+
+	#lt10{
+		height:300px;
+		width:300px;
+		right:100px;
+		top:-10px;
+		background-image:url("http://s19.postimg.org/m871crzb7/hood.png");
+		animation-name:lt_ani10;
+		animation-duration:40s;
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+		background-repeat:no-repeat;
+	}
+	
+	#lt11{
+		height:280px;
+		width:280px;
+		left:85px;
+		top:15px;
+		background-image:url("http://s19.postimg.org/yyb9pv79f/wolf1.png");
+		animation-name:lt_ani11;
+		animation-duration:40s;
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+		background-repeat:no-repeat;
+	}
+	
+	#lt12{
+		z-index:2;
+		background-color:Black;
+		top:0px;
+		width:666px;
+		height:0px;
+		animation-name:lt_ani12;
+		animation-duration:40s;
+		animation-iteration-count:infinite;
+		animation-timing-function:ease-out;
+	}
+	
+	
+
+	#lt13{
+		top:130px;
+		left:200px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/n9gxcrc03/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani13;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+
+	#lt14{
+		top:130px;
+		left:240px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/yac2hs48z/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani14;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+	
+	#lt15{
+		top:130px;
+		left:240px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/f92mo9v2b/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani15;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+	
+	#lt16{
+		top:130px;
+		left:250px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/tw3l5xtoj/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani16;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+	
+	#lt17{
+		top:130px;
+		left:220px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/oqxsakrcz/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani17;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+	
+	#lt18{
+		top:130px;
+		left:250px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/wiei94vib/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani18;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+	
+	#lt19{
+		top:130px;
+		left:270px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/c0tjxhjer/gbs.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani19;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+
+	#lt20{
+		top:130px;
+		left:240px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/ssjgtz91f/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani20;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+
+	#lt21{
+		top:130px;
+		left:250px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/433q9kvib/rkn.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani21;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+
+	#lt22{
+		top:130px;
+		left:230px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/nsm0m13er/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani22;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+
+	#lt23{
+		top:130px;
+		left:200px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/wh4kfptoj/grrm.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani23;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+	
+	#lt24{
+		top:130px;
+		left:250px;
+		height:50px;
+		width:300px;
+		//background-image: url("http://s19.postimg.org/l2coou6pv/image.png");
+		background-repeat:no-repeat;
+		animation-name:lt_ani24;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+		}
+		
+	#lt25{
+		z-index:2;
+		width:400px;
+		height:100px;
+		left:130px;
+		top:120px;
+		//background-image:url("http://s19.postimg.org/wl2z9pojn/read.png");	
+		background-repeat:no-repeat;
+		animation-name:lt_ani25;
+		animation-duration:40s;
+		animation-timing-function:ease-out;
+		animation-iteration-count:infinite;
+	}
+	
+	#lt_head_font{
+		color:#2F4F4F;
+		left:100px;
+	}
+	
+	#lt_description{
+		top:190px;
+		left:0px;
+	}
+	
+	#mid_div4{
+	height:200px;
+	width:100%;	
+	}
+
+//------------------------------------------------------------------HEADER-------------------------------------------------------------------------------
+	
+	#headers{
+		display:inline;
+	}
+
+	@keyframes head_ani{
+		from{height:0px;}
+		to{height:350px;}
+	}
+	
+	@keyframes htext_ani{
+		0%{top:100px;}
+		100%{top:50px;}
+	}
+	
+	#hd2{
+		//top:-5px;
+		top:50px;
+		left:350px;
+		height:900px;
+		width:900px;
+		background-image:url("http://s19.postimg.org/deudk9xfn/ccb4.png");//url("http://s19.postimg.org/yd0jicxab/ccw4.png");
+		background-repeat:no-repeat;
+		animation-name:htext_ani;
+		animation-duration:2s;
+		animation-timing-funtion:ease-out;
+		animation-iteration-count:1;
+	}
+	
+	#hd1{	
+		top:0px;
+		left:150px;
+		height:350px;
+		width:1000px;
+		background: linear-gradient(45deg,#7BE7D7,#7BE7D7,#7ED4DA,#86A7E3);
+		animation-name:head_ani;
+		animation-duration:2s;
+		animation-timing-funtion:ease-out;
+		animation-iteration-count:1;
+	}
+
+	@keyframes scroll_ani{
+		from{top:595px}
+		to{top:545px;}
+	} 
+	
+	#scroll{
+		height:130px;
+		width:130px;
+		background-image:url("http://s19.postimg.org/ankal5doj/scrolli.png");
+		background-repeat:no-repeat;
+		top:570px;
+		left:630px;
+		animation-name:scroll_ani;
+		animation-duration:4s;
+		animation-timing-function:ease-in-out;
+		animation-direction:alternate;
+		animation-iteration-count:infinite;
+	}
+	
+	#mid_div0{
+		height:800px;
+		width:100%;	
+	}
+	
+	#so{
+		font-size:40px;
+		top:400px;
+		left:500px;
+	}	
+
+//-------------------------------------------------------------PIC_CLASS-----------------------------------------------------------------------------------
+
+	#pic_class{
+		height:1400px;
+		width:100%;		
+	}
+	
+	#pc_head1{
+		font-size:100px;
+		left:500px;
+		color:#FF3030;//#EE3B3B;
+	}
+	
+	#ein1{
+		height:420px;
+		width:420px;
+		background-image: url("http://s19.postimg.org/xin6nt477/ein1.png");
+		background-repeat:no-repeat;
+		top:520px;
+		right:80px;
+	}
+	
+	#emo1{
+		height:310px;
+		width:310px;
+		background-image: url("http://s19.postimg.org/3t9zvgl1f/emo1.png");
+		background-repeat:no-repeat;
+		top:1170px;
+		right:120px;
+	}
+	
+	#egl1{
+		height:310px;
+		width:310px;
+		background-image: url("http://s19.postimg.org/ywetj43gj/egl1.png");
+		background-repeat:no-repeat;
+		top:820px;
+		left:120px;
+	}
+	
+	#art1{
+		height:400px;
+		width:400px;
+		background-image: url("http://s19.postimg.org/ud2kxllkz/art1.png");
+		background-repeat:no-repeat;
+		top:220px;
+		left:80px;
+	}
+	
+	#pc_1{
+		font-size:80px;
+		color:#ffCC33;
+		top:300px;
+		left:600px;
+	}
+	
+	#pc_2{
+		font-size:80px;
+		color:#1FC3F9;
+		top:600px;
+		left:400px;
+	}
+	
+	#pc_3{
+		font-size:80px;
+		color:#2F4F4F;
+		top:870px;
+		left:700px;
+	}
+	
+	#pc_4{
+		font-size:80px;
+		color:#8B3A3A;
+		top:1200px;
+		left:400px;
+	}
+
+	#be{
+		position:absolute;
+		font-size:40px;
+		top:1600px;
+		left:530px;
+	}
+	
+	#be2{
+		position:absolute;
+		font-size:30px;
+		top:1700px;
+		left:580px;
+	}	
+	
+	#mid_div5{
+		height:1550px;
+		width:100%;	
+	}
+	
+	#be21{
+		color:#FF3030;
+	}
+	
+	#be22{
+		color:#88C100;
+	}
+	
+	#be23{
+		color:#ffCC33;
+	}
+	
+	#mid_div6{
+		position:relative;
+		display:block;
+		left:568px;
+		background-color:White;
+		border:1px solid #70E4D0;
+		border-radius:15px;
+		height:50px;
+		width:180px;
+		text-align:center;
+		transition: left 1s, background-color 1s, border-radius 1s, width 1s;	
+	}	
+
+	#mid_div7{
+		position:relative;
+		display:block;
+		left:568px;
+		background-color:White;
+		border:1px solid #70E4D0;
+		border-radius:15px;
+		height:50px;
+		width:180px;
+		margin-top:5px;
+		margin-bottom:50px;
+		text-align:center;
+		transition: left 1s, background-color 1s, border-radius 1s, width 1s;	
+	}
+	
+	.jointext{
+		color:#70E4D0;
+		position:relative;
+		font-family: 'Lobster', sans-serif;
+		font-size:30px;
+		top:-24px;
+		text-align:center;
+		transition: color 1s;
+	}
+	
+	#t1{
+		left:-4px;
+	}
+	
+	#t2{
+		left:0px;
+	}
+	
+	#mid_div6:hover{
+		left:0px;
+		background-color:#70E4D0;
+		border-radius:0px;
+		width:100%;		
+	}
+	
+	#mid_div7:hover{
+		left:0px;
+		background-color:#70E4D0;
+		border-radius:0px;
+		width:100%;		
+	}
+	
+	#mid_div6:hover #t1{
+		color:White;
+	}
+	
+	#mid_div7:hover #t2{
+		color:White;
+	}
+
+//-------------------------------FOOTING---------------------------------------------------
+
+	#footing{
+	}
+
+	#ft1{	
+		bottom:-10px;
+		left:170px;
+		height:300px;
+		width:1000px;
+		background: linear-gradient(45deg,#7BE7D7,#7BE7D7,#7ED4DA,#86A7E3);
+	}
+	
+	
+	#ft2{
+		top:100px;
+		left:172px;
+		height:300px;
+		width:300px;
+		background-image:url("http://s19.postimg.org/yd0jicxab/ccw4.png");
+		background-repeat:no-repeat;
+	}
+
+	#ft3{
+		height:60px;
+		width:60px;
+		background-image: url("http://s19.postimg.org/3w7nnisub/fb1.png");
+		background-repeat:no-repeat;
+		top:5px;
+		right:0px;
+	}	
+	
+	
+	#ft4{
+		height:34px;
+		width:34px;
+		background-image: url("http://s19.postimg.org/7ejnjwtqb/twitter1.png");
+		background-repeat:no-repeat;
+		top:55px;
+		right:13px;
+	}	
+
+
+	#ft5{
+		height:80px;
+		width:80px;
+		background-image: url("http://s19.postimg.org/uiopq8mf7/insta1.png");
+		background-repeat:no-repeat;
+		top:68px;
+		right:-11px;
+	}	
+	
+	#fttext{
+		color:Black;
+		position:relative;
+		font-family: 'Lobster', sans-serif;
+		font-size:30px;
+		top:280px;
+		text-align:center;
+	}
+
+</style>
+</head>
+<body>
+<div id="background_major">
+	<div class="background_mini" id="triangle1"></div>
+	<div class="background_mini" id="triangle2"></div>
+	<div class="background_mini" id="smoothies"></div>
+	<div class="background_mini" id="shoes"></div>
+	<div class="background_mini" id="waves"></div>
+	<div class="background_mini" id="squares"></div>
+	<div class="background_mini" id="circle1"></div>
+	<div class="background_mini" id="circle2"></div>
+	<div class="background_mini" id="hexas"></div>	
+</div>
+<div class="classes" id="headers">
+	<div class="elements" id="hd1"></div>
+	<div class="elements" id="hd2"></div>
+</div>
+<div class="elements" id="scroll"></div>
+<div class="classes" id="mid_div0">
+	<p id="so" class="class_description">So what do you like?</p>	
+</div>
+
+<div class="classes" id="science">
+	<div class="class_inner1" id="science1">
+		<div class="elements" id="sc7"></div>
+		<div class="elements" id="sc_rocket">
+				<div class="elements" id="sc6"></div>
+				<div class="elements" id="sc5"></div>
+		</div>
+		<div class="elements" id="sc4"></div>
+		<div class="elements" id="sc1"></div>
+		<div class="elements" id="sc2"></div>
+		<div class="elements" id="sc3"></div>
+	</div>
+	<div class="class_inner2" id="science2">
+		<h2 class="like">like</h2>
+		<h1 class="class_head_font" id="sci_head_font">SCIENCE</h1>
+		<p class="class_description" id="sci_description">can we force science down the throats of the general? <br>can we strap the non believers into believeing science is awesome? <br>should we do that? <br>Hell Yes!<br> join on Brainy people, lets show them the power of science!</p>
+	</div>
+</div>
+<div class="classes" id="mid_div1"></div>
+
+<div class="classes" id="music">
+	<div class="class_inner1" id="music1">
+		<h2 class="like">like</h2>
+		<h1 class="class_head_font" id="ms_head_font">MUSIC</h1>
+		<p class="class_description" id="ms_description">After silence,<br> that which comes nearest to expressing the inexpressible is music.<br>It can give utter peace and the beats to joy!<br>Come on and join like minded music fanatics!<br>and roll over the paint of melody.</div>
+	<div class="class_inner2" id="music2">
+		<div class="elements" id="ms1">
+			<div class="elements" id="msst1"></div>
+			<div class="elements" id="msst2"></div>
+		</div>
+		<div class="elements" id="ms2">
+			<div class="elements" id="ms3"></div>
+			<div class="elements" id="ms4"></div>
+			<div class="elements" id="ms5"></div>
+			<div class="elements" id="ms6"></div>
+			<div class="elements" id="ms7"></div>
+			<div class="elements" id="ms8"></div>
+			<div class="elements" id="ms9"></div>
+			<div class="elements" id="ms12"></div>
+			<div class="elements" id="ms13"></div>
+			<div class="elements" id="ms14"></div>
+			<div class="elements" id="ms15"></div>
+			<div class="elements" id="ms16"></div>
+			<div class="elements" id="ms17"></div>
+			<div class="elements" id="ms18"></div>
+			<div class="elements" id="ms19"></div>
+		</div>
+		<div class="elements" id="ms20"></div>
+	</div>
+</div>
+<div class="classes" id="mid_div2"></div>
+
+<div class="classes" id="canvas">
+	<div class="class_inner1" id="canvas1">
+		<div class="elements" id="cv1"></div>
+		<div class="elements" id="cv2"></div>
+		<div class="elements" id="cv3"></div>
+		<div class="elements" id="cv4"></div>
+		<div class="elements" id="cv5"></div>
+		<div class="elements" id="cv6"></div>
+		<div class="elements" id="cv7"></div>
+		<div class="elements" id="cv8"></div>
+		<div class="elements" id="cv9"></div>
+		<div class="elements" id="cv10"></div>
+		<div class="elements" id="cv11"></div>
+		<div class="elements" id="cv12"></div>
+	</div>
+	<div class="class_inner2" id="canvas2">
+		<h2 class="like">like</h2>
+		<h1 class="class_head_font" id="cv_head_font">CANVAS</h1>
+		<p class="class_description" id="cv_description">if you love to create, then come with us..<br>on the ultimate freedom of expression,the blank canvas<br> that awaits your imagination..to paint it with whatever emotions you mould in. brush a painting,make a tattoo,<br>create a masterpiece!</p>
+	</div>
+</div>
+<div class="classes" id="mid_div3"></div>
+
+<div class="classes" id="literature">
+	<div class="class_inner1" id="literature1">
+		<h2 class="like">like</h2>
+		<h1 class="class_head_font" id="lt_head_font">LITERATURE</h1>			
+		<p class="class_description" id="lt_description">Words mean a million things. The true language of expression,<br>the bottom of the iceberg. So if you read, be it a vintage play, a medieval novel<br>or a Marvel comic, or if you write, be it a dramatic novel, a sarcastic short story<br>or a modern poem, just come up to us..get all the exposure<br>..and unleash your complete potential! </p>	
+	</div>
+	<div class="class_inner2" id="literature2">
+		<div class="elements" id="lt1">
+			<div class="elements" id="lt2">
+				<div class="elements" id="eye1"></div>
+				<div class="elements" id="eye2"></div>			
+			</div>
+			<div class="elements" id="lt5"></div>
+			<div class="elements" id="lt6"></div>
+			<div class="elements" id="lt7">
+				<div class="elements" id="lt7_lines1"></div>
+				<div class="elements" id="lt7_lines2"></div>
+				<div class="elements" id="lt7_lines3"></div>
+				<div class="elements" id="lt7_lines4"></div>
+			</div>
+			<div class="elements" id="lt8"></div>
+			<div class="elements" id="lt9"></div>
+			<div class="elements" id="lt10"></div>
+			<div class="elements" id="lt11"></div>
+			<div class="elements" id="lt13"></div>
+			<div class="elements" id="lt14"></div>
+			<div class="elements" id="lt15"></div>
+			<div class="elements" id="lt16"></div>
+			<div class="elements" id="lt17"></div>
+			<div class="elements" id="lt18"></div>
+			<div class="elements" id="lt19"></div>
+			<div class="elements" id="lt20"></div>
+			<div class="elements" id="lt21"></div>
+			<div class="elements" id="lt22"></div>
+			<div class="elements" id="lt23"></div>
+			<div class="elements" id="lt24"></div>	
+			<div class="elements" id="lt25"></div>	
+			<div class="elements" id="lt3"></div>
+			<div class="elements" id="lt4"></div>	
+			<div class="elements" id="lt12"></div>		
+		</div>
+	</div>
+</div>
+<div class="classes" id="mid_div4"></div>
+<div class="classes" id="pic_class">
+	<h1 class="class_head_font" id="pc_head1">Express</h1>
+	<div class="elements" id="ein1"></div>
+	<div class="elements" id="egl1"></div>
+	<div class="elements" id="art1"></div>
+	<div class="elements" id="emo1"></div>
+	<h2 class="class_head_font" id="pc_1">Creativity</h2>	
+	<h2 class="class_head_font" id="pc_2">Innovation</h2>
+	<h2 class="class_head_font" id="pc_3">Skill</h2>
+	<h2 class="class_head_font" id="pc_4">Emotion</h2>	
+	<p id="be" class="class_description">Be what you like</p>
+	<p id="be2" class="class_description"><span id="be21">Be Different</span><br><span id="be22">Be New</span><br><span id="be23">Be Creative</span></p>
+</div>
+<div class="classes" id="mid_div5"></div>
+<a href="signup.php" style="text-decoration:none;">
+<div class="classes" id="mid_div6">
+	<p class="jointext" id="t1">Join</p>
+</div>
+</a>
+<a href="login.php" style="text-decoration:none;">
+<div class="classes" id="mid_div7">
+	<p class="jointext" id="t2">User Login</p>
+</div>
+</a>
+<div class="classes" id="footing">
+	<div class="elements" id="ft1">
+		<div class="elements" id="ft3"></div>
+		<div class="elements" id="ft4"></div>
+		<div class="elements" id="ft5"></div>
+	</div>
+	<div class="elements" id="ft2"></div>
+	<p id="fttext">"Unlock your mind and jump out of the wicked box"</p>
+</div>
+</body>
+</html>
